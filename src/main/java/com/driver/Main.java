@@ -10,8 +10,8 @@ public class Main {
         public int product(int x, int y, int z){
             return x*y*z;
         }
-        public int product(double x, double y){
-            return (int) (x*y);
+        public double product(double x, double y){
+            return (x*y);
         }
 
     }
@@ -20,7 +20,7 @@ public class Main {
         Product p =new Product();
         int result=p.product(2, 5);
         int result2=p.product(2, 4, 5);
-        int result3=p.product(2, 6.1);
+        double result3=p.product(2.6, 6.1);
 
     }
 
